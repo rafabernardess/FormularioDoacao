@@ -5,10 +5,10 @@ const DoacaoFinalizada = () => {
   return (
     <div className="CaixaMensagem">
         <div className="logo">
-                <img src="public/img/logo.png" alt="Logo" className="logo-img" />
+                <img src="/img/logo.png" alt="Logo" className="logo-img" />
             </div>
             <div className="icon">
-                <img src="public/img/icone.png" alt="Ícone" className="icon-img" />
+                <img src="/img/icone.png" alt="Ícone" className="icon-img" />
             </div>
             <div className ="fonte">
             <h1>Agradecemos</h1>
