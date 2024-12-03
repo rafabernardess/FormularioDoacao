@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Variáveis CSS para facilitar manutenção */
+:root {
+  --font-family: 'Poppins', sans-serif;
+  --color-text: #fff;
+  --color-background: #fcf9f9;
+  --color-input-bg: #fcf9f9;
+  --color-primary: #F06030;
+  --color-primary-hover: #ff5722;
+  --color-secondary: rgb(216, 216, 224);
+  --border-radius: 20px;
+  --font-size-input: 1.2vw;
+}
+
+body {
+  font-family: 'Poppins', sans-serif; /* Define a fonte utilizada no corpo */
+  background-image: url(/img/fundo.png); /* Define a imagem de fundo */
+  background-size: cover; /* Faz a imagem de fundo cobrir todo o espaço disponível */
+  background-repeat: no-repeat; /* Evita que a imagem de fundo se repita */
+  background-position: center; /* Centraliza a imagem de fundo */
+  color: #fff; /* Define a cor do texto como branco */
+  height: 100vh; /* Define a altura do corpo como 100% da altura da janela de visualização */
+  display: flex; /* Utiliza flexbox para alinhar os itens */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center; /* Centraliza os itens verticalmente */
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  width: 75px;
+  height: auto;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+.sectionDados, .sectionPagamento {
+  position: absolute;
+  width: 35%;
+  transform: translate(-80%, -50%);
+}
+
+.sectionDados {
+  top: 56.5vh;
+  left: 38%;
+  margin-top: -1.5vw;
+}
+
+.sectionPagamento {
+  top: 54vh;
+  left: 80%;
+  margin-top: -2.9vw;
+}
+
+.sectionPagamento h3 {
+  position: relative;
+  top: 30px;
+  margin-top: -20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5vw;
+}
+
+.input-field, .input-value {
+  width: 100%;
+  padding: 10px;
+  border-radius: var(--border-radius);
+  border: none;
+  background-color: var(--color-input-bg);
+  color: #181818;
+  font-size: var(--font-size-input);
+}
+
+.contribution-methods {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 56px;
+}
+
+.method-container {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  position: relative;
+}
+
+.contribution-method {
+  width: 100%;
+  background-color: var(--color-secondary);
+  padding: 7px;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contribution-method.selected {
+  border: 2px solid var(--color-primary);
+}
+
+.method-icon {
+  width: 6vw;
+  height: 5vw;
+  display: block;
+  margin: 0 auto;
+}
+
+.method-text {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  color: var(--color-text);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.button {    
+  margin-top: 85vh;          
+  background-color: var(--color-primary); 
+  display: flex;
+  bottom: 1vw; /*Diminui o valor pq estava bem perto do campo*/
+  left: 50%;    
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  color: var(--color-text);
+  text-align: center;
+  font-size: 1.2rem;  
+}
+
+.button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.checkbox-group {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 48px;
+  left: 4px;
+}
+
+.checkbox-group input {
+  margin-right: 15px;
+}
+
+.valores {
+  position: absolute;
+  top:  2vh; /*Alterei o valor para 1*/
+  left: 50%; /*Coloquei 50% tava dando a impressao que tava mais para esquerda*/
+  transform: translate(-50%, 0%);
+  width: 25%; /*Aumentei o valor para ficar maior que o texto mas se quiser alterar fique avontade*/
+}
+.error-message {
+  color: rgb(255, 255, 255);
+  font-weight: bold;    
+  position: absolute;  /* Torna a mensagem de erro posicionada de forma absoluta */
+  top: 37vw;           /* Ajuste a posição vertical conforme necessário */
+  left: 50.5%;           /* Centraliza a mensagem horizontalmente */
+  transform: translateX(-50%); /* Garante que a mensagem fique centralizada */
+  padding: 10px;       /* Adiciona preenchimento interno */
+  border-radius: 8px;  /* Arredonda os cantos */
+  font-size: 1rem;     /* Tamanho da fonte */
+  max-width: 90%;      /* Limita a largura da mensagem */
+  text-align: center;  /* Centraliza o texto */
+  z-index: 10;         /* Garante que a mensagem de erro fique na frente de outros elementos */
+}
+
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  body{
+    height: 230vh;
+    max-height: 500vh;
+  }
+  .valores{
+    margin-top: 10%;
+  }
+  .sectionDados{
+    width: 80%;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+  .sectionPagamento{
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50%;
+  }
+  .method-container {
+    width: 50%;    
+  }
+  .button{
+    margin-top: 60em;   
+  }  
+  .input-field, .input-value {
+    font-size: 1.5vw;
+  }
+
+  .contribution-method {
+    width: 30%;
+  }
+
+  .method-icon {
+    width: 8vw;
+    height: 6vw;
+  }  
+}
+
+@media (max-width: 768px) {
+  body{
+    height: 250vh;
+    max-height: 500vh;
+  }
+  .valores{
+    margin-top: 10%;
+  }
+  .sectionDados{
+    width: 80%;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+  .sectionPagamento{
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 70%;
+  }
+  .method-container {
+    width: 50%;    
+  }
+  .button{
+    margin-top: 140vh;
+  }
+  .input-field, .input-value {
+    font-size: 1.5vw;
+  }
+
+  .contribution-method {
+    width: 30%;
+  }
+  
+  .method-icon {
+    width: 8vw;
+    height: 6vw;
+  }  
+  
+}
+
+@media (max-width: 480px) {
+  body{
+    height: 250vh;
+    max-height: 500vh;
+  }
+  .valores{
+    margin-top: 40%;  
+  }
+  .valores h2{
+    font-size: 100%;
+    width: 9em;
+    margin-left: -2em;
+    font-size: 5vw;
+  }
+  .valores input{
+    width: 12em;    
+    transform: translateX(-15%);
+    margin-left: -4%;
+  }
+  .sectionDados{
+    width: 70%;
+    transform: translateX(-50%);
+    left: 48%;   
+    top: 70%; 
+    font-size: 4vw;
+  }
+  .sectionPagamento{
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 130%;
+    font-size: 4vw;
+  }
+  .method-container {
+    width: 50%;    
+  }
+  .button{
+    margin-top: 200vh;
+  }
+
+  .error-message{
+    margin-top: 250%;
+  }
+  .input-field, .input-value {
+    font-size: 3vw;
+  }
+
+  .contribution-method {
+    height: 200%;
+    width: 40%;
+  
+  }
+
+  .method-icon {
+    width: 8vw;
+    height: 6vw;
+  }  
+}
