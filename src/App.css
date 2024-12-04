@@ -15,7 +15,7 @@
 
 body {
   font-family: 'Poppins', sans-serif; /* Define a fonte utilizada no corpo */
-  background-image: url(/img/fundo.png); /* Define a imagem de fundo */
+  background-image: url(public/img/fundo.png); /* Define a imagem de fundo */
   background-size: cover; /* Faz a imagem de fundo cobrir todo o espaço disponível */
   background-repeat: no-repeat; /* Evita que a imagem de fundo se repita */
   background-position: center; /* Centraliza a imagem de fundo */
@@ -269,11 +269,11 @@ h2, h3 {
 
 @media (max-width: 480px) {
   body{
-    height: 250vh;
+    height: 150vh;
     max-height: 500vh;
   }
   .valores{
-    margin-top: 40%;  
+    margin-top: 20%;  
   }
   .valores h2{
     font-size: 100%;
@@ -290,21 +290,21 @@ h2, h3 {
     width: 70%;
     transform: translateX(-50%);
     left: 48%;   
-    top: 70%; 
+    top: 35%; 
     font-size: 4vw;
   }
   .sectionPagamento{
     width: 80%;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 130%;
+    margin-top: 50%;
     font-size: 4vw;
   }
   .method-container {
     width: 50%;    
   }
   .button{
-    margin-top: 200vh;
+    margin-top: 120vh;
   }
 
   .error-message{
