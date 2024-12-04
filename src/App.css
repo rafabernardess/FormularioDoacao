@@ -15,7 +15,7 @@
 
 body {
   font-family: 'Poppins', sans-serif; /* Define a fonte utilizada no corpo */
-  background-image: url(public/img/fundo.png); /* Define a imagem de fundo */
+  background-image: url(/img/fundo.png); /* Define a imagem de fundo */
   background-size: cover; /* Faz a imagem de fundo cobrir todo o espaço disponível */
   background-repeat: no-repeat; /* Evita que a imagem de fundo se repita */
   background-position: center; /* Centraliza a imagem de fundo */
