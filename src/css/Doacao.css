@@ -198,16 +198,16 @@ h2, h3 {
   }
 
   .sectionDados {
-    width: 80%;
+    width: 75%;
     transform: translateX(-50%);
     left: 50%;
   }
 
   .sectionPagamento {
-    width: 80%;
+    width: 75%;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 30%;
+    margin-top: 25%;
   }
 
   .method-container {
@@ -215,7 +215,7 @@ h2, h3 {
   }
 
   .button {
-    margin-top: 60vh;
+    margin-top: 50vh;
   }
 
   .input-field, .input-value {
@@ -242,16 +242,16 @@ h2, h3 {
   }
 
   .sectionDados {
-    width: 80%;
+    width: 70%;
     transform: translateX(-50%);
     left: 50%;
   }
 
   .sectionPagamento {
-    width: 80%;
+    width: 70%;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 50%;
+    margin-top: 40%;
   }
 
   .method-container {
@@ -259,11 +259,11 @@ h2, h3 {
   }
 
   .button {
-    margin-top: 120vh;
+    margin-top: 100vh;
   }
 
   .input-field, .input-value {
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
 
   .contribution-method {
@@ -282,7 +282,7 @@ h2, h3 {
   }
 
   .valores {
-    margin-top: 20%;
+    margin-top: 15%;
   }
 
   .valores h2 {
@@ -297,16 +297,16 @@ h2, h3 {
   .sectionDados {
     width: 70%;
     transform: translateX(-50%);
-    left: 48%;
-    font-size: 4.5vw;
+    left: 50%;
+    font-size: 5vw;
   }
 
   .sectionPagamento {
-    width: 80%;
+    width: 70%;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 120%;
-    font-size: 4.5vw;
+    margin-top: 100%;
+    font-size: 5vw;
   }
 
   .method-container {
@@ -314,11 +314,11 @@ h2, h3 {
   }
 
   .button {
-    margin-top: 170vh;
+    margin-top: 160vh;
   }
 
   .input-field, .input-value {
-    font-size: 3.5vw;
+    font-size: 4vw;
   }
 
   .contribution-method {
