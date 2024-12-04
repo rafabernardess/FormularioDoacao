@@ -14,16 +14,16 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif; /* Define a fonte utilizada no corpo */
-  background-image: url(/img/fundo.png); /* Define a imagem de fundo */
-  background-size: cover; /* Faz a imagem de fundo cobrir todo o espaço disponível */
-  background-repeat: no-repeat; /* Evita que a imagem de fundo se repita */
-  background-position: center; /* Centraliza a imagem de fundo */
-  color: #fff; /* Define a cor do texto como branco */
-  height: 100vh; /* Define a altura do corpo como 100% da altura da janela de visualização */
-  display: flex; /* Utiliza flexbox para alinhar os itens */
-  justify-content: center; /* Centraliza os itens horizontalmente */
-  align-items: center; /* Centraliza os itens verticalmente */
+  font-family: 'Poppins', sans-serif;
+  background-image: url(/img/fundo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header {
@@ -133,18 +133,18 @@ h2, h3 {
   white-space: nowrap;
 }
 
-.button {    
-  margin-top: 85vh;          
-  background-color: var(--color-primary); 
+.button {
+  margin-top: 85vh;
+  background-color: var(--color-primary);
   display: flex;
-  bottom: 1vw; /*Diminui o valor pq estava bem perto do campo*/
-  left: 50%;    
+  bottom: 1vw;
+  left: 50%;
   border: none;
   border-radius: 50px;
   cursor: pointer;
   color: var(--color-text);
   text-align: center;
-  font-size: 1.2rem;  
+  font-size: 1.2rem;
 }
 
 .button:hover {
@@ -166,162 +166,172 @@ h2, h3 {
 
 .valores {
   position: absolute;
-  top:  2vh; /*Alterei o valor para 1*/
-  left: 50%; /*Coloquei 50% tava dando a impressao que tava mais para esquerda*/
+  top: 2vh;
+  left: 50%;
   transform: translate(-50%, 0%);
-  width: 25%; /*Aumentei o valor para ficar maior que o texto mas se quiser alterar fique avontade*/
-}
-.error-message {
-  color: rgb(255, 255, 255);
-  font-weight: bold;    
-  position: absolute;  /* Torna a mensagem de erro posicionada de forma absoluta */
-  top: 37vw;           /* Ajuste a posição vertical conforme necessário */
-  left: 50.5%;           /* Centraliza a mensagem horizontalmente */
-  transform: translateX(-50%); /* Garante que a mensagem fique centralizada */
-  padding: 10px;       /* Adiciona preenchimento interno */
-  border-radius: 8px;  /* Arredonda os cantos */
-  font-size: 1rem;     /* Tamanho da fonte */
-  max-width: 90%;      /* Limita a largura da mensagem */
-  text-align: center;  /* Centraliza o texto */
-  z-index: 10;         /* Garante que a mensagem de erro fique na frente de outros elementos */
+  width: 25%;
 }
 
+.error-message {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  position: absolute;
+  top: 37vw;
+  left: 50.5%;
+  transform: translateX(-50%);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1rem;
+  max-width: 90%;
+  text-align: center;
+  z-index: 10;
+}
 
 /* Responsividade */
 @media (max-width: 1024px) {
-  body{
-    height: 230vh;
-    max-height: 500vh;
+  body {
+    height: auto;
   }
-  .valores{
-    margin-top: 10%;
+
+  .valores {
+    margin-top: 5%;
   }
-  .sectionDados{
+
+  .sectionDados {
     width: 80%;
     transform: translateX(-50%);
     left: 50%;
   }
-  .sectionPagamento{
+
+  .sectionPagamento {
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30%;
+  }
+
+  .method-container {
+    width: 45%;
+  }
+
+  .button {
+    margin-top: 60vh;
+  }
+
+  .input-field, .input-value {
+    font-size: 2vw;
+  }
+
+  .contribution-method {
+    width: 30%;
+  }
+
+  .method-icon {
+    width: 7vw;
+    height: 5vw;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    height: auto;
+  }
+
+  .valores {
+    margin-top: 8%;
+  }
+
+  .sectionDados {
+    width: 80%;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+
+  .sectionPagamento {
     width: 80%;
     left: 50%;
     transform: translateX(-50%);
     margin-top: 50%;
   }
+
   .method-container {
-    width: 50%;    
+    width: 45%;
   }
-  .button{
-    margin-top: 60em;   
-  }  
+
+  .button {
+    margin-top: 120vh;
+  }
+
   .input-field, .input-value {
-    font-size: 1.5vw;
+    font-size: 2.5vw;
   }
 
   .contribution-method {
-    width: 30%;
+    width: 35%;
   }
 
   .method-icon {
-    width: 8vw;
-    height: 6vw;
-  }  
-}
-
-@media (max-width: 768px) {
-  body{
-    height: 250vh;
-    max-height: 500vh;
+    width: 7vw;
+    height: 5vw;
   }
-  .valores{
-    margin-top: 10%;
-  }
-  .sectionDados{
-    width: 80%;
-    transform: translateX(-50%);
-    left: 50%;
-  }
-  .sectionPagamento{
-    width: 80%;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 70%;
-  }
-  .method-container {
-    width: 50%;    
-  }
-  .button{
-    margin-top: 140vh;
-  }
-  .input-field, .input-value {
-    font-size: 1.5vw;
-  }
-
-  .contribution-method {
-    width: 30%;
-  }
-  
-  .method-icon {
-    width: 8vw;
-    height: 6vw;
-  }  
-  
 }
 
 @media (max-width: 480px) {
-  body{
-    height: 250vh;
-    max-height: 500vh;
+  body {
+    height: auto;
   }
-  .valores{
-    margin-top: 40%;  
+
+  .valores {
+    margin-top: 20%;
   }
-  .valores h2{
-    font-size: 100%;
-    width: 9em;
-    margin-left: -2em;
+
+  .valores h2 {
     font-size: 5vw;
   }
-  .valores input{
-    width: 12em;    
+
+  .valores input {
+    width: 16em;
     transform: translateX(-15%);
-    margin-left: -4%;
   }
-  .sectionDados{
+
+  .sectionDados {
     width: 70%;
     transform: translateX(-50%);
-    left: 48%;   
-    top: 70%; 
-    font-size: 4vw;
+    left: 48%;
+    font-size: 4.5vw;
   }
-  .sectionPagamento{
+
+  .sectionPagamento {
     width: 80%;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 130%;
-    font-size: 4vw;
-  }
-  .method-container {
-    width: 50%;    
-  }
-  .button{
-    margin-top: 200vh;
+    margin-top: 120%;
+    font-size: 4.5vw;
   }
 
-  .error-message{
-    margin-top: 250%;
+  .method-container {
+    width: 45%;
   }
+
+  .button {
+    margin-top: 170vh;
+  }
+
   .input-field, .input-value {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 
   .contribution-method {
-    height: 200%;
+    height: 150%;
     width: 40%;
-  
   }
 
   .method-icon {
-    width: 8vw;
-    height: 6vw;
-  }  
+    width: 7vw;
+    height: 5vw;
+  }
+
+  .error-message {
+    margin-top: 220%;
+  }
 }
