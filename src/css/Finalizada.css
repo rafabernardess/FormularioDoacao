@@ -3,9 +3,8 @@
 html, body {
     margin: 0;
     padding: 0;
-    min-height: 100vh;
-    overflow-x: hidden; /* Impede a rolagem horizontal */
-    overflow-y: hidden; /* Impede a rolagem vertical */
+    height: 100%; /* Garante que a altura da tela seja ocupada */
+    overflow: hidden; /* Impede a rolagem da página */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,14 +24,26 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     color: #fff;
+    height: 100vh; /* Garantir que o body ocupe toda a altura da tela */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Preenche a tela */
+    overflow-y: auto; /* Permite rolar apenas o conteúdo dentro do contêiner */
+    padding: 20px;
+    width: 100%;
 }
 
 /* Estilo para o logo */
-.logo {
-    position: absolute; /* A logo agora ficará fixa no topo */
-    top: 25px; /* Ajuste a posição conforme necessário */
-    left: 50px; /* Ajuste a posição conforme necessário */
-    z-index: 10; /* Garante que a logo fique sobre os outros elementos */
+.logo {    
+    position: absolute; /* A logo ficará fixa no topo */
+    top: 25px; 
+    left: 50px;
+    z-index: 10;
 }
 
 .logo-img {
@@ -91,6 +102,9 @@ body {
 }
 
 @media (max-width: 768px) {
+    body {
+        max-height: 10vh;  
+    }
     .CaixaMensagem{
         width: 14em;
         margin-top: -40em;
@@ -132,7 +146,6 @@ body {
         top: -1em;
     }
     .logo img{
-        width: 4em;
-    }
+        width: 3em;
+    }    
 }
-
