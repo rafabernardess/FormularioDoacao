@@ -11,12 +11,13 @@ html, body {
     color: #fff;
 }
 
-/* Definir a imagem de fundo apenas no body */
+/* Definir a imagem de fundo no body */
 body {
-    background-image: url(/img/fundo.png);
+    background-image: url(/img/fundo.png); /* Verifique se o caminho está correto */
     background-size: cover; /* Garante que a imagem cubra toda a tela */
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed; /* A imagem de fundo ficará fixa enquanto o conteúdo rola */
     height: 100%; /* Garantir que o body ocupe toda a altura */
     display: flex;
     justify-content: center;
@@ -24,10 +25,11 @@ body {
 }
 
 /* Estilo para o logo */
-.CaixaMensagem{
+.CaixaMensagem {
     margin-left: 15em;
 }
-.logo {    
+
+.logo {
     top: 25px;
     left: 50px;
 }
@@ -82,14 +84,14 @@ body {
 }
 
 /* Estilos responsivos usando media queries */
-@media (max-width: 1024px){
-    .CaixaMensagem{
-        margin-top: -40em;        
+@media (max-width: 1024px) {
+    .CaixaMensagem {
+        margin-top: -40em;
     }
 }
 
 @media (max-width: 768px) {
-    .CaixaMensagem{
+    .CaixaMensagem {
         width: 14em;
         margin-top: -40em;
     }
@@ -97,19 +99,19 @@ body {
         width: 1em;
         margin-left: 4em;
     }
-    .fonte h1{
+    .fonte h1 {
         margin-top: 1.5em;
         font-size: 2em;
     }
-    .fonte h2{
+    .fonte h2 {
         margin-left: 0.2em;
         font-size: 1.8em;
     }
 }
 
 @media (max-width: 580px) {
-    .CaixaMensagem{        
-        margin-top: -11em;    
+    .CaixaMensagem {
+        margin-top: -11em;
         width: 40%;
     }
     .icon img {
@@ -117,19 +119,19 @@ body {
         width: 20em;
         margin-top: -3em;
     }
-    .fonte h1{
+    .fonte h1 {
         margin-top: 5.5em;
         font-size: 1.9em;
         left: -28%;
         top: -1em;
     }
-    .fonte h2{
+    .fonte h2 {
         margin-left: 6em;
         font-size: 1.5em;
         left: -8.7em;
         top: -1em;
     }
-    .logo img{
+    .logo img {
         width: 3em;
     }
 }
