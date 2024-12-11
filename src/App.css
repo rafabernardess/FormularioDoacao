@@ -309,7 +309,7 @@ h2, h3 {
   }
 
   .error-message{
-    top: 50%;
+    top: 250%;
   }
   .input-field, .input-value {
     font-size: 3vw;
