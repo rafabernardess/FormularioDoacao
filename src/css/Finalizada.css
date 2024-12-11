@@ -3,31 +3,27 @@
 html, body {
     margin: 0;
     padding: 0;
-    min-height: 100vh; /* Garante que o corpo ocupe pelo menos 100% da altura da tela */
+    height: 100%; /* Garante que a altura da tela seja ocupada */
     overflow-x: hidden; /* Impede a rolagem horizontal */
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #fff;
+}
+
+/* Definir a imagem de fundo apenas no body */
+body {
     background-image: url(/img/fundo.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color: #fff;
-}
-
-body {
-    min-height: 100vh; /* Garante que o body ocupe a altura mínima da tela */
+    height: 100vh; /* Garantir que o body ocupe toda a altura da tela */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/img/fundo.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: #fff;
 }
-/* Estilo para o logo */
 
+/* Estilo para o logo */
 .CaixaMensagem{
     margin-left: 15em;
 }
@@ -46,7 +42,6 @@ body {
     position: relative; /* Permite que o ícone flua com o layout */
     margin-bottom: 20px; /* Espaçamento abaixo do ícone */
     
-    /* Aqui você pode ajustar a posição do ícone conforme desejar */
     top: 100px; /* Ajuste para mover para cima ou para baixo */
     left: -400px; /* Ajuste para mover para a esquerda ou direita */
     transform: translate(0, 0); /* Altere valores para reposicionar o ícone se necessário */
@@ -68,8 +63,8 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 3.5rem;
     position: relative;
-    left: -100px; 
-    top: -100px; 
+    left: -100px;
+    top: -100px;
     margin: 0;
     width: 98%;
     max-width: 400px;
@@ -79,8 +74,8 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 3.5rem;
     position: relative;
-    right: 90px; 
-    top: -100px; 
+    right: 90px;
+    top: -100px;
     margin: 0;
     width: 98%;
     max-width: 400px;
@@ -88,24 +83,19 @@ body {
 
 /* Estilos responsivos usando media queries */
 @media (max-width: 1024px){
-    
     .CaixaMensagem{
         margin-top: -40em;        
-    }    
+    }
 }
 
 @media (max-width: 768px) {
-    body {
-        max-height: 10vh;  
-                      
-    }
     .CaixaMensagem{
         width: 14em;
         margin-top: -40em;
     }
     .icon img {
-        width: 1em;   
-        margin-left: 4em;     
+        width: 1em;
+        margin-left: 4em;
     }
     .fonte h1{
         margin-top: 1.5em;
@@ -120,12 +110,12 @@ body {
 @media (max-width: 580px) {
     .CaixaMensagem{        
         margin-top: -11em;    
-        width: 40%;            
+        width: 40%;
     }
     .icon img {
-        margin-left: 21em;        
-        width: 20em;      
-        margin-top: -3em;          
+        margin-left: 21em;
+        width: 20em;
+        margin-top: -3em;
     }
     .fonte h1{
         margin-top: 5.5em;
@@ -141,5 +131,5 @@ body {
     }
     .logo img{
         width: 3em;
-    }    
+    }
 }
