@@ -175,7 +175,7 @@ h2, h3 {
   color: rgb(255, 255, 255);
   font-weight: bold;    
   position: absolute;  /* Torna a mensagem de erro posicionada de forma absoluta */
-  top: 35vw;           /* Ajuste a posição vertical conforme necessário */
+  top: 40vw;           /* Ajuste a posição vertical conforme necessário */
   left: 50.5%;           /* Centraliza a mensagem horizontalmente */
   transform: translateX(-50%); /* Garante que a mensagem fique centralizada */
   padding: 10px;       /* Adiciona preenchimento interno */
