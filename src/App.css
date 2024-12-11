@@ -269,7 +269,7 @@ h2, h3 {
 
 @media (max-width: 480px) {
   body{
-    height: 100vh;
+    height: 150vh;
     max-height: 500vh;
   }
   .valores{
