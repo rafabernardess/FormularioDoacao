@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-body {
+html, body {
     margin: 0;
     padding: 0;
-    height: 100%; /* Garante que o corpo ocupe toda a altura da tela */
+    min-height: 100vh; /* Garante que o corpo ocupe pelo menos 100% da altura da tela */
     overflow-x: hidden; /* Impede a rolagem horizontal */
     display: flex;
     justify-content: center;
@@ -13,9 +13,19 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     color: #fff;
-    
 }
 
+body {
+    min-height: 100vh; /* Garante que o body ocupe a altura mínima da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+}
 /* Estilo para o logo */
 
 .CaixaMensagem{
