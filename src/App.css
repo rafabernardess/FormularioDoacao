@@ -304,11 +304,11 @@ h2, h3 {
     width: 50%;    
   }
   .button{
-    margin-top: 110vh;
+    margin-top: 120vh;
   }
 
   .error-message{
-    margin-top: 190vh;
+    margin-top: 150vh;
   }
   .input-field, .input-value {
     font-size: 3vw;
