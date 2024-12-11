@@ -3,7 +3,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%; /* Garante que a altura da tela seja ocupada */
+    height: 100%; /* Garantir que ambos ocupem a altura total */
     overflow-x: hidden; /* Impede a rolagem horizontal */
     display: flex;
     justify-content: center;
@@ -14,10 +14,10 @@ html, body {
 /* Definir a imagem de fundo apenas no body */
 body {
     background-image: url(/img/fundo.png);
-    background-size: cover;
+    background-size: cover; /* Garante que a imagem cubra toda a tela */
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh; /* Garantir que o body ocupe toda a altura da tela */
+    height: 100%; /* Garantir que o body ocupe toda a altura */
     display: flex;
     justify-content: center;
     align-items: center;
