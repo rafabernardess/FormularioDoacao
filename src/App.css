@@ -308,7 +308,7 @@ h2, h3 {
   }
 
   .error-message{
-    margin-top: 250%;
+    margin-top: 220%;
   }
   .input-field, .input-value {
     font-size: 3vw;
@@ -324,4 +324,12 @@ h2, h3 {
     width: 8vw;
     height: 6vw;
   }  
+
+  .logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: auto;
+  }
 }
